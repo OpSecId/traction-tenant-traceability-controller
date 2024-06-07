@@ -2,16 +2,18 @@
   "@context": {
     "@version": 1.1,
     "@protected": true,
-    "act": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96361_01#",
-    "PetroleumAndNaturalGasLease": {
-      "@id": "act:lease",
+    "schema": "http://schema.org/#",
+    "png+act": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96361_01#",
+    "DrillingLicence": "png+act:licence",
+    "PetroleumAndNaturalGasLease": "png+act:lease",
+    "TenureTitle": {
+      "@id": "https://www2.gov.bc.ca/gov/content/industry/natural-gas-oil/petroleum-natural-gas-tenure",
       "@context": {
         "@version": 1.1,
         "@protected": true,
-        "schema": "http://schema.org/#",
         "id": "@id",
         "type": "@type",
-        "titleHolder": "act:holder+of+a+location",
+        "titleHolder": "png+act:holder+of+a+location",
         "description": "schema:description"
       }
     }
