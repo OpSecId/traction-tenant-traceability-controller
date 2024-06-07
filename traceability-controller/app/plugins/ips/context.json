@@ -2,131 +2,17 @@
   "@context": {
     "@version": 1.1,
     "@protected": true,
-    "schema": "http://schema.org/#",
-    "MinesAct": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96293_01#",
-    "PNGAct": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96361_01#",
-    "ERAAct": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/08036_01#",
-
-    "name": "schema:name",
-    "description": "schema:description",
-    "identifier": "schema:identifier",
-    "image": { "@id": "schema:image", "@type": "@id" },
-
-    "Director": {
-      "@id": "PNGAct:director",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-
     "TenureTitle": {
-      "@id": "PNGAct:gas+well",
+      "@id": "https://w3id.org/citizenship#PermanentResidentCard",
       "@context": {
         "@version": 1.1,
         "@protected": true,
-        "titleHolder": {"@id": "PNGAct:holder+of+a+location"},
-        "interest": {"@id": "PNGAct:interest"},
-        "location": {"@id": "PNGAct:location"},
-        "well": {"@id": "PNGAct:well"},
-        "zone": {"@id": "PNGAct:zone"}
-      }
-    },
-    "Permitee": {
-      "@id": "PNGAct:permittee",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-    "Lessee": {
-      "@id": "PNGAct:lessee",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-    "Licensee": {
-      "@id": "PNGAct:licensee",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-    "NaturalGas": {
-      "@id": "PNGAct:natural+gas",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-    "Petroleum": {
-      "@id": "PNGAct:petroleum",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-    "NaturalGasLease": {
-      "@id": "PNGAct:lease",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-    "DrillingLicence": {
-      "@id": "PNGAct:Drilling+licence",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-
-    "GasWell": {
-      "@id": "PNGAct:gas+well",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-
-    "PetroleumWell": {
-      "@id": "PNGAct:petroleum+well",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-
-    "StorageWell": {
-      "@id": "PNGAct:storage+well",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-
-    "WaterSourceWell": {
-      "@id": "PNGAct:water+source+well",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true
-      }
-    },
-
-    "Tract": {
-      "@id": "PNGAct:field",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-
+        "act": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96361_01#",
+        "schema": "http://schema.org/#",
         "id": "@id",
         "type": "@type",
-
-        "description": "http://schema.org/description",
-        "name": "http://schema.org/name",
-        "identifier": "http://schema.org/identifier",
-        "image": { "@id": "http://schema.org/image", "@type": "@id" }
+        "titleHolder": "act:holder+of+a+location",
+        "description": "schema:description"
       }
     }
   }
